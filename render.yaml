@@ -1,7 +1,7 @@
 services:
   # A Docker web service
   - type: web
-    name: alist
+    name: minepro
     env: docker
     repo: https://github.com/joe-lz/minepro.git # optional
     region: oregon # optional (defaults to oregon)
@@ -29,8 +29,6 @@ services:
         # value: db_name
         sync: false
       - key: DB_TABLE_PREFIX
-        # value: alist_
         sync: false
       - key: CDN
-        # value: https://npm.elemecdn.com/alist-web@$version/dist
         sync: false
